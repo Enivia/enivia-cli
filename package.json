@@ -1,0 +1,12 @@
+{
+  "name": "enivia-cli",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "git@github.com:Enivia/enivia-cli.git",
+  "author": "Enivia <aqingcc@outlook.com>",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4",
+    "qrcode": "^1.5.0"
+  }
+}
