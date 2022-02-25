@@ -1,12 +1,24 @@
 #!/usr/bin/env node
 
 const { Command } = require("commander");
+const chalk = require("chalk");
 
 const search = require("./lib/search");
 const qrcode = require("./lib/qrcode");
 const uuid = require("./lib/uuid");
 const server = require("./lib/server");
 const program = new Command();
+
+// add some useful info on help
+program.on("--help", () => {
+  console.log();
+  console.log(
+    `  Run ${chalk.cyan(
+      "enivia <command> --help"
+    )} for detailed usage of given command.`
+  );
+  console.log();
+});
 
 // search
 program
